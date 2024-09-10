@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnvBox</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .glass-effect {
+            background-size: cover;
+            background-position: center center;
+            background-color: rgba(241, 239, 239, 0.429);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8 text-center glass-effect">
+                <h2>You're being redirected to EnvBox. Please wait...</h2>
+                <p>If the redirection does not happen, click <a href="http://34.27.125.69/" id="manual-link">here</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom JavaScript for redirection -->
+    <script>
+        window.onload = function() {
+            const targetURL = "http://34.27.125.69/";
+            setTimeout(function() {
+                window.location.href = targetURL;
+            }, 1000); 
+        };
+    </script>
+</body>
+
+</html>
